@@ -10,7 +10,7 @@
                 <h1 class="title">Press Start To Drink</h1>
                 <nav>
                     <ul class = "main_nav">
-                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="home.html"> Home </a></li>
                         <li><a href="games.html"> Our Games </a></li>
                         <li><a href="http://www.youtube.com/c/PressStarttoDrink"> Our Channel </a></li>
                     </ul>
@@ -19,6 +19,21 @@
     </header>
     <div id= "container">
         <div id="main">
+            <div id="mySidenav" class="sidenav">
+                <a href="#rocket_league">Rocket League</a>
+                <a href="#heroes_storm">Heroes of the Storm</a>
+                <a href="#siege">Rainbow Six: Siege</a>
+                <a href="#overwatch">Overwatch</a>
+                <a href="#fortnite">Fortnite</a>
+                <a href="#payday">Payday 2</a>
+                <a href="#left_for_dead">Left 4 Dead 2</a>
+                <a href="#screencheat">Screencheat</a>
+                <a href="#crawl">Crawl</a>
+                <a href="#overcooked">Overcooked</a>
+                <a href="#gang_beasts">Gang Beasts</a>
+                <a href="#CSGO">Counter Strike: Global Offensive</a>
+            </div>
+            
             <h4>Drinking Game Rules</h4>
             <br>
             <p>Here you can find the rules to the videos we have released so far.We would love to hear your experiences trying any of our drinking games! Go ahead and click the title of a game to check out the video for that game! While you're there, leave a comment on what you think of it!</p>
@@ -26,7 +41,7 @@
             <br>
             <br>
             <div class="game">
-                <a class="game_video" href="https://www.youtube.com/watch?v=yvGd0WGTMTc&t=1s" target="_blank">Rocket League</a>
+                <a id="rocket_league" href="https://www.youtube.com/watch?v=yvGd0WGTMTc&t=1s" target="_blank">Rocket League</a>
                 <p>This game was meant to be played as a pre-game. So, the focus was to get drunk fast! Drink responsibly.</p>
                 <br>
                 <ul class="game_rules">
@@ -45,34 +60,45 @@
             <br>
             
             <div class="game">
-                <a class="game_video" href="https://www.youtube.com/watch?v=uNbPLq-Bg2w&t=52s" target="_blank">Heroes of the Storm</a>
+                <a id="heroes_storm" href="https://www.youtube.com/watch?v=uNbPLq-Bg2w&t=52s" target="_blank">Heroes of the Storm</a>
                 <br>
                 <ul class="game_rules">
-                    <li>Take a shot before the game.</li>
+                    <li>Take a shot before you begin the first game.</li>
                     <li>Pick auto-select for you character and guess which universe you character will be from. If you're wrong, take a shot.</li>
-                    <li>If you are the first to die, take a shot.</li>
-                    <li>If you die, drink.</li>
-                    <li>Every time you get a talent, drink.</li>
-                    <li>If you die to enemy minions, drink 3 times.</li>
-                    <li>If you die to neutral mercs, take a shot.</li>
-                    <li>If you get a camp stolen from you, drink 3 times.</li>
-                    <li>If you die to a tower, fort, or core, take a shot.</li>
-                    <li>If your entire team is dead simultaneously, take a shot. (Team wipe)</li>
+                    <li>Take a shot if:
+                        <ul>
+                            <li>You die to neutral mercs.</li>
+                            <li>You die to a tower, fort, or core.</li>
+                            <li>Your entire team is dead simultaneously. (Team wipe)</li>
+                        </ul>
+                    </li>
+                    <li>Drink once if:
+                        <ul>
+                            <li>You are killed by an enemy.</li>
+                            <li>You get a talent.</li>
+                        </ul>
+                    </li>
+                    <li>Drink three times if:
+                        <ul>
+                            <li>You die to enemy minions.</li>
+                            <li>A camp is stolen from you.</li>
+                        </ul>
+                    </li>
                     <li>At the end of the game, if you lost, for every tier 2 fort you didn't take, drink 3 times. For every tier 1 you didn't take, take a shot.</li>
                 </ul>
                 
                 <div class="game_link">
-                    <p>Play the game for free: <a href="https://us.shop.battle.net/en-us/product/heroes-of-the-storm" target="_blank">https://us.shop.battle.net/en-us/product/heroes-of-the-storm</a> </p>
+                    <p>Play it for free: <a href="https://us.shop.battle.net/en-us/product/heroes-of-the-storm" target="_blank">https://us.shop.battle.net/en-us/product/heroes-of-the-storm</a> </p>
                 </div>
             </div>
             
             <br>
             
             <div class="game">
-                <a class="game_video" href="https://www.youtube.com/watch?v=AYbPwm_VNvM&t=1s" target="_blank">Rainbow Six: Siege</a>
+                <a id="siege" href="https://www.youtube.com/watch?v=AYbPwm_VNvM&t=1s" target="_blank">Rainbow Six: Siege</a>
                 <br>
                 <ul class="game_rules">
-                    <li>Take a shot before the game.</li>
+                    <li>Take a shot before you begin the first game.</li>
                     <li>Drink for dying.</li>
                     <li>The first person to die per round drinks 3 times.</li>
                     <li>If you die by headshot, drink 3 times.</li>
@@ -95,6 +121,266 @@
                 </div>
             </div>
             
+            <br>
+            
+            <div class="game">
+                <a id="overwatch" href="https://youtu.be/PLFClJmN0ko" target="_blank">Overwatch</a>
+                <br>
+                <ul class="game_rules">
+                    <li>Take a shot before you begin the first game.</li>
+                    <li>Drink every time you die.
+                        <ul>
+                            <li>+1 drink if you die without conntributing to an elimination that life.</li>
+                            <li>+2 drinks if you are pushed off the map.</li>
+                        </ul>
+                    </li>
+                    <li>Take a shot if you kill yourself.</li>
+                    <li>Take a shot if your team is wiped.</li>
+                    <li>Take a shot if your ultimate doesn't do anything helpful.</li>
+                    <li>Take a shot if you step off the point during overtime.</li>
+                    <li>Drink for the highest medal you received:
+                        <ul>
+                            <li>One drink for gold.</li>
+                            <li>Two drinks for silver.</li>
+                            <li>Three drinks for bronze.</li>
+                        </ul>
+                    </li>
+                    <li>If you get play of the game, you may assign a shot for someone else to take.</li>
+                    <li>If you receive at least 5 votes on your placard at the end of a game, you are immune for post game drinks. This includes being assigned a shot, and drinking for medals.</li>
+                </ul>
+                
+                <div class="game_link">
+                    <p>Buy the game: <a href="https://playoverwatch.com/en-us/" target="_blank">https://playoverwatch.com/en-us/</a> </p>
+                </div>
+            </div>
+            
+            <br>
+            
+            <div class="game">
+                <a id="fortnite" href="https://youtu.be/_24iUDX9V3U" target="_blank">Fortnite</a>
+                <br>
+                <ul class="game_rules">
+                    <li>Take a shot before you begin the first game.</li>
+                    <li>Drink if you don't thank the bus driver.</li>
+                    <li>Drink if you are downed.</li>
+                    <li>Take a shot if no one on your team gets a kill.</li>
+                    <li>Take a shot if you are one of the first five teams to die.</li>
+                    <li>If you get the winning kill, you may assign two shots.  (Ex. One to Friend A and one to Friend B).</li>
+                </ul>
+                
+                <div class="game_link">
+                    <p>Play it for free: <a href="https://www.epicgames.com/fortnite/en-US/buy-now/battle-royale" target="_blank">https://www.epicgames.com/fortnite/en-US/buy-now/battle-royale</a> </p>
+                </div>
+            </div>
+            
+            <br>
+            
+            <div class="game">
+                <a id="payday" href="https://youtu.be/cbHwpmrEGnM" target="_blank">Payday 2</a>
+                <br>
+                <ul class="game_rules">
+                    <li>Take a shot before you begin the first game.</li>
+                    <li>Drink once if:
+                        <ul>
+                            <li>You must restart an objective. (Drills, Computers, etc.)</li>
+                            <li>Any exclamation point is seen on screen.</li>
+                            <li>You run out of ammo on a weapon.</li>
+                            <li>You receive money as your Victory Card.</li>
+                        </ul>
+                    </li>
+                    <li>Three Drinks if you are downed by a guard.
+                        <ul>
+                            <li>BONUS: Add a drink if you are downed by a taser.</li>
+                        </ul>
+                    </li>
+                    <li>Take a shot if:
+                        <ul>
+                            <li>You are downed by a cloaker. (Sam Fisher)</li>
+                            <li>You run out of ammo on both of your weapons.</li>
+                            <li>You fail a mission.</li>
+                        </ul>
+                    </li>
+                    <li>BONUS: Drink Six times if you are taken into custody.</li>
+                </ul>
+                
+                <div class="game_link">
+                    <p>Buy it on Steam: <a href="https://store.steampowered.com/app/218620/PAYDAY_2/" target="_blank">https://store.steampowered.com/app/218620/PAYDAY_2/</a> </p>
+                </div>
+            </div>
+              
+            <br>
+            
+            <div class="game">
+                <a id="left_for_dead" href="https://youtu.be/jHM-FZx99nI" target="_blank">Left 4 Dead 2</a>
+                <br>
+                <ul class="game_rules">
+                    <li>Take a shot before you begin the first game.</li>
+                    <li> Drink once if:
+                        <ul>
+                            <li>You are caught by a special infected.</li>
+                            <li>Every time you get to a safe house.</li>
+                            <li>Every time someone dies.</li>
+                            <li>Every time someone respawns.</li>
+                        </ul>
+                    </li>
+                    <li>Drink twice if:
+                        <ul>
+                            <li>You go down.</li>
+                            <li>Every time a horde is called.</li>
+                        </ul>
+                    </li>
+                    <li>Drink Three Times if:
+                        <ul>
+                            <li>You startle the witch and it isn't the first time of the mission.</li>
+                            <li>Every time a tank appears.</li>
+                        </ul>
+                    </li>
+                    <li>Take a shot if:
+                        <ul>
+                            <li>You kill a team mate.</li>
+                            <li>The witch is startled for the first time in a mission.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="game_link">
+                    <p>Buy it on Steam: <a href="https://store.steampowered.com/app/550/Left_4_Dead_2/" target="_blank">https://store.steampowered.com/app/550/Left_4_Dead_2/</a> </p>
+                </div>
+            </div>
+              
+            <br>
+            
+            <div class="game">
+                <a id="screencheat" href="https://youtu.be/SSZ_iIJJ-9Y" target="_blank">Screencheat</a>
+                <br>
+                <ul class="game_rules">
+                    <li>Take a shot before you begin the first game.</li>
+                    <li> Drink once if:
+                        <ul>
+                            <li>You die.</li>
+                            <li>You switch weapons during the round.</li>
+                        </ul>
+                    </li>
+                    <li>Drink three times if you kill yourself.</li>
+                    <li>Take a shot if:
+                        <ul>
+                            <li>You did not win the match.</li>
+                            <li>You had 0 kills at the end of the game.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="game_link">
+                    <p>Buy it on Steam: <a href="https://store.steampowered.com/app/301970/Screencheat/" target="_blank">https://store.steampowered.com/app/301970/Screencheat/</a> </p>
+                </div>
+            </div>
+              
+            <br>
+            
+            <div class="game">
+                <a id="crawl" href="https://youtu.be/9akgCGCX228" target="_blank">Crawl</a>
+                <br>
+                <ul class="game_rules">
+                    <li>Take a shot before you begin the first game.</li>
+                    <li> Drink once if:
+                        <ul>
+                            <li>You die as a monster.</li>
+                            <li>The group goes down a floor.</li>
+                        </ul>
+                    </li>
+                    <li>Drink three times if you kill die as a human.</li>
+                    <li>Take a shot if:
+                        <ul>
+                            <li>A slime kills you.</li>
+                            <li>You lose the game.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="game_link">
+                    <p>Buy it on Steam: <a href="https://store.steampowered.com/app/293780/Crawl/" target="_blank">https://store.steampowered.com/app/293780/Crawl/</a> </p>
+                </div>
+            </div>
+              
+            <br>
+            
+            <div class="game">
+                <a id="overcooked" href="https://youtu.be/SSZ_iIJJ-9Y" target="_blank">Overcooked</a>
+                <br>
+                <ul class="game_rules">
+                    <li>Take a shot before you begin the first game.</li>
+                    <li> Drink once if:
+                        <ul>
+                            <li>You send an incorrect order.</li>
+                            <li>You fail to finish an order.</li>
+                            <li>A plate goes into the trash.</li>
+                        </ul>
+                    </li>
+                    <li>Drink three times if you fall off the edge.</li>
+                    <li>Take a shot if you fail to achieve at least two stars.</li>
+                    <li>Secret Rule (You may hide this rule from a friend)
+                        <ul>
+                            <li>Drink if you do not swear (in-game) before you deliver a plate.</li>
+                            <li>If secret rule is guessed, all other players must drink.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="game_link">
+                    <p>Buy it on Steam: <a href="https://store.steampowered.com/app/448510/Overcooked/" target="_blank">https://store.steampowered.com/app/448510/Overcooked/</a> </p>
+                </div>
+            </div>
+               
+            <br>
+            
+            <div class="game">
+                <a id="gang_beasts" href="https://youtu.be/CB_IJQO3Teo" target="_blank">Gang Beasts</a>
+                <br>
+                <ul class="game_rules">
+                    <li>Take a shot before you begin the first game.</li>
+                    <li>Drink once if you're knocked out.</li>
+                    <li>Drink three times if you die.</li>
+                    <li>Take a shot for losing the game.(Melee mode, first to three was our ruleset)</li>
+                </ul>
+                
+                <div class="game_link">
+                    <p>Buy it on Steam: <a href="https://store.steampowered.com/app/285900/Gang_Beasts/" target="_blank">https://store.steampowered.com/app/285900/Gang_Beasts/</a> </p>
+                </div>
+            </div>
+               
+            <br>
+            
+            <div class="game">
+                <a id="CSGO" href="https://youtu.be/aUIyU-XSHc4" target="_blank">Counter Strike: Global Offensive</a>
+                <br>
+                <ul class="game_rules">
+                    <li>Take a shot before you begin the first game.</li>
+                    <li>Take a shot if:
+                        <ul>
+                            <li>You are knifed or tazed.</li>
+                            <li>You kill a teammate.</li>
+                            <li>You end a game with 0 kills.</li>
+                            <li>You lose a game.</li>
+                        </ul>
+                    </li>
+                    <li>Drink for each $1000 you spend per round.</li>
+                    <li>Drink when you die.
+                        <ul>
+                            <li>+1 drink if you die by a headshot.</li>
+                        </ul>
+                    </li>
+                    <li>Drink three times if:
+                        <ul>
+                            <li>You are killed with an explosive.</li>
+                            <li>You kill the hostage</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="game_link">
+                    <p>Play it for free: <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank">https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/</a> </p>
+                </div>
+            </div>
         </div>
     </div>
     

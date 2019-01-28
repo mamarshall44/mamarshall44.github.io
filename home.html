@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Press Start To Drink</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+    <header class="header">
+            <div class="wrapper">
+                <h1 class="title">Press Start To Drink</h1>
+                <nav>
+                    <ul class = "main_nav">
+                        <li><a href="home.html"> Home </a></li>
+                        <li><a href="games.html"> Our Games </a></li>
+                        <li><a href="http://www.youtube.com/c/PressStarttoDrink"> Our Channel </a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    
+    <div id= "container">
+        <div id="main">
+            <h4>About Our Channel</h4>
+            <br>
+            <br>
+            <p> Hey Everybody! Welcome to Press Start to Drink. We are a group of friends that decided to create a Youtube channel dedicated to two of our favorite things: video games and alcohol. It started in college when we came up with a way to pre-game parties while playing Rocket League. After that, we decided to try to make drinking games using more of our favorite games. We then thought it would be a fun idea to share our creations with other gaming/alcohol enthusiasts. From there on out, we recorded, edited, and published our favorite games to Youtube.</p>
+            <br>
+            <p>We are still a small channel, but we are looking to grow. So, if you have not already, smash that Subscribe button left down below, and share our page to the alcoholics... I mean gamers in your life! If you have any advice or suggestions on what you would like to see us play, go ahead and leave comments on our videos!</p>
+            <div class="subscribe">
+                <script src="https://apis.google.com/js/platform.js"></script>
+                <div class="g-ytsubscribe" data-channelid="UCLyuQK5ypMg2OzAX1a78KCg" data-layout="full" data-count="default"></div>
+            </div>
+            
+            <div class="latest_video">
+                <h4>Our Latest Video!</h4>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+                <iframe class="latestVideoEmbed" vnum='0' cid="UCLyuQK5ypMg2OzAX1a78KCg" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+
+                <script>
+                    var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+                    function loadVideo(iframe){
+                        $.getJSON( reqURL + iframe.getAttribute('cid'),
+                        function(data) {
+                            var videoNumber = (iframe.getAttribute('vnum')?Number(iframe.getAttribute('vnum')):0);
+                            console.log(videoNumber);
+                            var link = data.items[videoNumber].link;
+                            id = link.substr(link.indexOf("=") + 1);  
+                            iframe.setAttribute("src","https://youtube.com/embed/"+id + "?controls=0&autoplay=1");
+                        }
+                        );
+                    }
+                    var iframes = document.getElementsByClassName('latestVideoEmbed');
+                    for (var i = 0, len = iframes.length; i < len; i++){
+                           loadVideo(iframes[i]);
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+        
+    <footer id="footer">
+        <h4>Follow Our Social Media!</h4>
+        <nav>
+            <ul class = "footer_nav">
+                <li><a class="footer_link" href="https://www.instagram.com/pressstarttodrink/" target="_blank"> <img class="link_img" src="insta.png"><div class="link_titles">Instagram</div></a></li>
+                <li><a class="footer_link" href="http://www.youtube.com/c/PressStarttoDrink" target="_blank"><img src="YouTube.png"><div class="link_titles">Youtube</div></a></li>
+                <li><a class="footer_link" href="https://twitter.com/OfficialPSTD" target="_blank"> <img src="twitter.png"><div class="link_titles">Twitter</div></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

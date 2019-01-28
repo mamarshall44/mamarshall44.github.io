@@ -147,7 +147,7 @@ p
     margin: 50px 10px;
 }
 
-.game_video
+.game a
 {
     text-decoration: none;
     color: black;
@@ -175,4 +175,45 @@ p
 .game_link
 {
     margin: 10px
+}
+
+.game_link a
+{
+    text-decoration: underline;
+    font-size: 15px;
+    color: blue;
+}
+
+/* The sidenav */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 100px;
+}
+
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: darkgray;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
